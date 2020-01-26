@@ -1,0 +1,10 @@
+{
+	"name": "Katacoda",
+	"image": "katacoda",
+	"dockerFile": "Dockerfile",
+	"context": "..",
+	"extensions": [
+		"katacoda.vscode"
+	],
+	"shutdownAction": "stopContainer"
+}

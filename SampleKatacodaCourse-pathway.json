@@ -1,0 +1,11 @@
+{
+  "title": "My First courses",
+  "description": "Sample katacoda course",
+  "courses": [
+    {
+      "course_id": "scenario1",
+      "title": "First Scenario",
+      "description": "Sample first scenario"
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 {
-  "title": "First Scenario",
-  "description": "Sample first scenario",
+  "title": "Sample Scenario",
+  "description": "sample scenario ",
   "difficulty": "Beginner",
-  "time": "10m",
+  "time": "5m",
   "details": {
     "steps": [
       {

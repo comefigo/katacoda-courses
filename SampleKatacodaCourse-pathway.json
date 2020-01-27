@@ -3,9 +3,9 @@
   "description": "Sample katacoda course",
   "courses": [
     {
-      "course_id": "scenario1",
-      "title": "First Scenario",
-      "description": "Sample first scenario"
+      "course_id": "SampleScenario",
+      "title": "Sample Scenario",
+      "description": "sample scenario "
     }
   ]
 }

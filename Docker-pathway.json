@@ -1,0 +1,11 @@
+{
+  "title": "Docker",
+  "description": "初心者向けにDockerを学ぶコース",
+  "courses": [
+    {
+      "course_id": "docker_basic",
+      "title": "Docker基礎編",
+      "description": ""
+    }
+  ]
+}

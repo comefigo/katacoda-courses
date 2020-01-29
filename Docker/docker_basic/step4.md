@@ -8,10 +8,16 @@
     - 起動しているコンテナは一つもないことが確認できます
 
     [参照]<br/>
-      - [docker container ls](https://docs.docker.com/engine/reference/commandline/container_ls/)
+    - [docker container ls](https://docs.docker.com/engine/reference/commandline/container_ls/)
 
 2. 停止中のコンテナも含めて確認します<br/>
   `docker container ls -a`{{execute}} <br/>
+
+    [実行結果]<br/>
+
+    ```shell
+    CONTAINER ID   IMAGE     COMMAND       CREATED       STATUS       PORTS    NAMES
+    ```
 
     [説明]<br/>
     - `-a`を付加することで停止中のコンテナも表示します
@@ -50,7 +56,6 @@
     aab56677fc9e   centos:6     "echo 'hello world'"   3 seconds ago    Exited (0) 2 seconds ago            mystifying_diffi
     ```
 
-
     [説明]<br/>
     - 停止しているコンテナが一つあります
     - CONTAINER ID･･･コンテナ生成された際に自動で割り振られる**一意のID**
@@ -64,3 +69,30 @@
     A: 実行したプロセス(`hello world`の表示)がすぐ終了したから、コンテナも停止した<br/>
     　通常のOSにおいては実行したプロセスが完了しても、待機プロセスがバックグラウンドで常駐しているため、OSが自動停止しない<br/>
     　コンテナは**バックグラウンドなプロセスではなく、フォアグラウンドなプロセスがない限り、終了します**
+
+7. 再度コンテナを起動します<br/>
+  `docker container run -i centos:6 echo 'hello katacoda' `{{execute}} <br/>
+
+    [実行結果]<br/>
+
+    ```shell
+    hello katacoda
+    ```
+
+8. 再度、停止中のコンテナも含めて確認します<br/>
+  `docker container ls -a`{{execute}} <br/>
+
+    [実行結果]<br/>
+
+    ```shell
+    CONTAINER ID   IMAGE        COMMAND                   CREATED          STATUS                     PORTS    NAMES
+    aab56677fc9e   centos:6     "echo 'hello world'"      3 seconds ago    Exited (0) 2 seconds ago            mystifying_diffi
+    7821f714f10b   centos:6     "echo 'hello katacoda'"   3 seconds ago    Exited (0) 2 seconds ago            youthful_mayer
+    ```
+
+    [説明]<br/>
+    - 停止しているコンテナが2つになりました
+    - コンテナIDはそれぞれ異なるIDになっています<br/>
+      つまり、2つのコンテナはそれぞれ別ものとして扱われます(※図1)
+
+    [図1]

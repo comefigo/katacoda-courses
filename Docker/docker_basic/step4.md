@@ -36,6 +36,7 @@
     - `run`･･･指定したイメージからコンテナを生成します
     - `-i`･･･実行結果を出力します
     - `イメージ名:タグ名`ではなく、イメージIDを指定することも可能です
+    - `echo 'hello world'`は**[ベースイメージ(centos:6)で指定されたコマンド](https://github.com/CentOS/sig-cloud-instance-images/blob/23b05f6a35520ebf338e4df918e4952830da068b/docker/Dockerfile#L11)を上書きすることができる**
 
     [参照]<br/>
       - [docker container run](https://docs.docker.com/engine/reference/commandline/container_run/)

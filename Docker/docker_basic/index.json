@@ -7,7 +7,7 @@
     "assets": {
       "host01": [
         {
-          "file": "calc",
+          "file": "calc/my-calc.py",
           "target": "~/"
         }
       ]
@@ -62,7 +62,7 @@
     }
   },
   "environment": {
-    "uilayout": "terminal"
+    "uilayout": "editor-terminal"
   },
   "backend": {
     "imageid": "ubuntu1904"

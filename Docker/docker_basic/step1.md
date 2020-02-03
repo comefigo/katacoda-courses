@@ -1,9 +1,5 @@
 # コンテナイメージの取得
 
-  `echo "t1"`{{execute T1}} <br/>
-  `echo "t2"`{{execute T2}} <br/>
-
-
 1. CentOS 6のイメージを取得します<br/>
   `docker image pull centos:6`{{execute}} <br/>
 

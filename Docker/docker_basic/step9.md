@@ -9,7 +9,7 @@
 1. Pythonのコンテナを起動します<br/>
   `docker container run -it --name my-calc python:slim bash`{{execute T1}} <br/>
 
-2. Terminal 2からサンプルプログラムをコンテナ内にコピーします<br/>
+2. Terminal 2を開き、サンプルプログラムをコンテナ内の`/root/`にコピーします<br/>
   `docker container cp /my-calc.py my-calc:/`{{execute T2}} <br/>
 
 3. Terminal 1でサンプルプログラムを実行します<br/>

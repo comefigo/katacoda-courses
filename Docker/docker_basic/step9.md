@@ -12,5 +12,17 @@
 2. Terminal 2を開き、サンプルプログラムをコンテナ内の`/root/`にコピーします<br/>
   `docker container cp /my-calc.py my-calc:/`{{execute T2}} <br/>
 
+    **[説明]**<br/>
+      - ホストのファイルをコンテナにコピー。あるいはコンテナのファイルをホストにコピー
+
+    **[参照]**<br/>
+      - [docker cotainer cp](https://docs.docker.com/engine/reference/commandline/container_cp/)
+
 3. Terminal 1でサンプルプログラムを実行します<br/>
   `./my-calc.py`{{execute T1}} <br/>
+
+    [実行結果]<br/>
+
+    ```shell
+    2
+    ```

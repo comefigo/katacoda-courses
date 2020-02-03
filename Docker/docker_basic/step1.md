@@ -8,6 +8,7 @@
       - centos･･･イメージの名前
       - 6･･･タグ名。指定しない場合は`latest`（最新版）として扱われます
       - イメージの実態は**アプリケーションが実行できるためのファイル群**(OS関連、ランタイム、ミドルウェアなど)
+      - ローカルにコンテナイメージがなければ、リポジトリからコンテナイメージを取得
 
     [参照]<br/>
       - [docker image pull](https://docs.docker.com/engine/reference/commandline/image_pull/)

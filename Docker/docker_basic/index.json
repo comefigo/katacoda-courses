@@ -4,6 +4,14 @@
   "difficulty": "Beginner",
   "time": "30m",
   "details": {
+    "assets": {
+      "host01": [
+        {
+          "file": "calc",
+          "target": "~/"
+        }
+      ]
+    },
     "steps": [
       {
         "title": "Step 1",

@@ -63,7 +63,7 @@
     }
   },
   "environment": {
-    "uilayout": "editor-terminal"
+    "uilayout": "terminal-terminal"
   },
   "backend": {
     "imageid": "ubuntu1904"

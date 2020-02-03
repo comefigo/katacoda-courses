@@ -7,10 +7,10 @@
 コンテナに置き換えると以下のような手順になります<br/>
 
 1. Pythonのコンテナを起動します<br/>
-  `docker container run -it python:slim bash`{{execute HOST0}} <br/>
+  `docker container run -it --name my-calc python:slim bash`{{execute HOST01}} <br/>
 
-2. テキストエディタ`vim`を導入します<br/>
-  `apt-get update && apt-get install -y vim`{{execute HOST0}} <br/>
+2. Terminal 2からサンプルプログラムをコンテナ内にコピーします<br/>
+  `docker container cp /my-calc.py my-calc:/`{{execute HOST02}} <br/>
 
-3. プログラムを作成します<br/>
-  `vi calc.py`{{execute HOST0}} <br/>
+3. Terminal 1でサンプルプログラムを実行します<br/>
+  `./my-calc.py`{{execute HOST01}} <br/>

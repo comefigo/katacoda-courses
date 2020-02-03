@@ -8,7 +8,8 @@
       "host01": [
         {
           "file": "calc/my-calc.py",
-          "target": "~/"
+          "target": "~/",
+          "chmod": "+x"
         }
       ]
     },

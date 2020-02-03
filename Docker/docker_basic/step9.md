@@ -7,10 +7,10 @@
 コンテナに置き換えると以下のような手順になります<br/>
 
 1. Pythonのコンテナを起動します<br/>
-  `docker container run -it --name my-calc python:slim bash`{{execute HOST0}} <br/>
+  `docker container run -it --name my-calc python:slim bash`{{execute HOST1}} <br/>
 
 2. Terminal 2からサンプルプログラムをコンテナ内にコピーします<br/>
-  `docker container cp /my-calc.py my-calc:/`{{execute HOST1}} <br/>
+  `docker container cp /my-calc.py my-calc:/`{{execute HOST2}} <br/>
 
 3. Terminal 1でサンプルプログラムを実行します<br/>
-  `./my-calc.py`{{execute HOST0}} <br/>
+  `./my-calc.py`{{execute HOST1}} <br/>

@@ -7,4 +7,4 @@ args = sys.argv
 
 
 if __name__ == "__main__":
-    print(1 + args[1])
+    print(3.14 * int(args[1]))

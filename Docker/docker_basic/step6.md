@@ -1,37 +1,37 @@
 # ホストとコンテナの関係
 
 1. コンテナに接続します<br/>
-  `docker container run -it centos:6 bash`{{execute HOST0}} <br/>
+  `docker container run -it centos:6 bash`{{execute T1}} <br/>
 
-    [説明]<br/>
+    **[説明]**<br/>
       - コンテナの生成と同時にbashが実行されます
       - `-it`はログインする際に必須のパラメータになります
       - `[root@コンテナID /]#` になったらログイン完了です
 
 2. 新しいTerminal 2を起動し、起動中のコンテナを確かめてみよう<br/>
-  `docker container ls` {{execute HOST1}} <br/>
+  `docker container ls` {{execute T2}} <br/>
 
-    [説明]<br/>
+    **[説明]**<br/>
       - 1つのコンテナが起動中であると確認できます
       - 前述で立ち上げたコンテナがログイン状態のため、起動したままになっています
 
 ## コンテナとホストは異なるOSとして認識される
 
 1. Terminal 1でコンテナのOSのバージョンを確認します
-  `cat /etc/redhat-release`{{execute HOST0}} <br/>
+  `cat /etc/redhat-release`{{execute T1}} <br/>
 
-    [実行結果]<br/>
+    **[実行結果]**<br/>
       ```
       CentOS release 6.10 (Final)
       ```
 
-    [説明]<br/>
+    **[説明]**<br/>
       - CentOSとして認識されています
 
 2. Terminal 2でホストのOSのバージョンを確認します
-  `cat /etc/os-release`{{execute HOST1}} <br/>
+  `cat /etc/os-release`{{execute T2}} <br/>
 
-    [実行結果]<br/>
+    **[実行結果]**<br/>
       ```
       NAME="Ubuntu"
       VERSION="19.04 (Disco Dingo)"
@@ -47,22 +47,22 @@
       UBUNTU_CODENAME=disco
       ```
 
-    [説明]<br/>
+    **[説明]**<br/>
       - Ubuntuである
       - コンテナとホストは**異なるOSとして認識されています**
 
 ## コンテナのプロセスはホストで動く
 
 1. Terminal 1(コンテナ)でsleepプロセスを実行します
-  `sleep 10000`{{execute HOST0}} <br/>
+  `sleep 10000`{{execute T1}} <br/>
 
-    [説明]<br/>
+    **[説明]**<br/>
       - 10000間待機する
 
 2. Terminal 2で実行中のプロセスを確認します
-  `ps -aux`{{execute HOST1}} <br/>
+  `ps -aux`{{execute T2}} <br/>
 
-    [説明]<br/>
+    **[説明]**<br/>
       - `sleep`を実行しているプロセスを確認します
       - コンテナ同士のプロセスは名前空間が異なるため、お互いにアクセスすることはできない
       - コンテナからホストのプロセスは見えない
@@ -75,10 +75,10 @@
 ※コンテナランタイム(kata containers)を変えることでカーネル分離型のコンテナを作ることもできる。それによりセキュリティの強度を高めることができる
 
 1. Terminal 1(コンテナ)でカーネルを確認します<br/>
-  `uname -a`{{execute HOST0}} <br/>
+  `uname -a`{{execute T1}} <br/>
 
 2. Terminal 2でカーネルを確認します<br/>
-  `uname -a`{{execute HOST1}} <br/>
+  `uname -a`{{execute T2}} <br/>
 
-    [説明]<br/>
+    **[説明]**<br/>
       - カーネルが同じである

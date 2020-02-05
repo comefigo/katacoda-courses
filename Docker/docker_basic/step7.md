@@ -12,7 +12,7 @@
     **[説明]**<br/>
       - `exec`はコンテナ内でコマンドを発行する<br/>
         メインのプロセス(`ping`)とは別のプロセスを実行できる
-      - `bash`を起動してコンテナを操作する
+      - `bash`を起動してコンテナを操作する<br/>
 
     **[参照]**<br/>
     - [docker container exec](https://docs.docker.com/engine/reference/commandline/container_exec/)

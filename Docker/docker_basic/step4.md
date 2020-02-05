@@ -5,7 +5,7 @@
 
     **[説明]**<br/>
     - 稼働中のコンテナの一覧を表示します
-    - 起動しているコンテナは一つもないことが確認できます
+    - 起動しているコンテナは一つもないことが確認できます<br/>
 
     **[参照]**<br/>
     - [docker container ls](https://docs.docker.com/engine/reference/commandline/container_ls/)
@@ -37,7 +37,7 @@
     - `-i`･･･実行結果を出力します
     - `イメージ名:タグ名`ではなく、イメージIDを指定することも可能です
     - `echo 'hello world'`は**[ベースイメージ(centos:6)で指定されたコマンド](https://github.com/CentOS/sig-cloud-instance-images/blob/23b05f6a35520ebf338e4df918e4952830da068b/docker/Dockerfile#L11)を上書きすることができる**
-    - `--name`･･･コンテナ名を命名して起動。未指定の場合は、適当な名前が割り当てられます
+    - `--name`･･･コンテナ名を命名して起動。未指定の場合は、適当な名前が割り当てられます<br/>
 
     **[参照]**<br/>
       - [docker container run](https://docs.docker.com/engine/reference/commandline/container_run/)

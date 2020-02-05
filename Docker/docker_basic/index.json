@@ -10,6 +10,10 @@
           "file": "calc/my-calc.py",
           "target": "~/",
           "chmod": "+x"
+        },
+        {
+          "file": "html/index.html",
+          "target": "~/htdocs"
         }
       ]
     },

@@ -28,12 +28,11 @@
         個人のイメージは「ユーザ名/イメージ名:タグ名」を付けるのが慣例
       - TAG･･･タグ名
       - IMAGE ID･･･イメージID
-      - SIZE･･･イメージサイズ
+      - SIZE･･･イメージサイズ<br/>
 
     **[ポイント]**<br/>
       - **アプリケーションを動作させるための最低限のファイル群しかない**ため、サイズが小さい<br/>
-        ※このイメージはCentOSとして認識できるシステム用のファイル群＋ユーティリティ(shell)などが必要最小限のものしかない<br/>
-      　※通常の[CentOS 6のISOイメージサイズ](http://isoredirect.centos.org/centos/6/isos/x86_64/)は3.7GB～
+        ※このイメージはCentOSとして認識できるシステム用のファイル群＋ユーティリティ(shell)などが必要最小限のもの<br/>通常の[CentOS 6のISOイメージサイズ](http://isoredirect.centos.org/centos/6/isos/x86_64/)は3.7GB～<br/>
 
     **[参照]**<br/>
       - [docker image ls](https://docs.docker.com/engine/reference/commandline/image_ls/)

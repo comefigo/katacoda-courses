@@ -25,7 +25,7 @@
   https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/
 
 3. コンテンツを編集してみます<br/>
-  `echo -e "<h3>change test page!!</h3>" >> ${PWD}/htdocs/index.html`{execute T1}} <br/>
+  `echo -e "<h3>change test page!!</h3>" >> ${PWD}/htdocs/index.html`{execute T1} <br/>
 
 4. 編集した内容を確認してみしょう<br/>
   https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/
